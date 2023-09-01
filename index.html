@@ -10,11 +10,12 @@
   <body class="layout">
     <header>
         <div class="header">
-          <a href="index.html">
-            <h1>La cocina</h1>
-
+       
+          <a href="index.html" class="logo-icono">
+            <img src="/imagenes/logo la cocina.png" class="logo">
           </a>
-        <div>
+        
+        <div class="contenedor-buscador">
           <input class="buscador" type="text">
           <input class="btn-buscar" type="button" value="Buscar">
         </div>
@@ -28,26 +29,38 @@
     <aside>
         <div class="aside">
       <ul>
-        <li class="btn-aside">Hamburguesas</li>
-        <li class="btn-aside">Pizzas</li>
-        <li class="btn-aside">Empanadas</li>
-        <li class="btn-aside">Bebidas</li>
-        <li class="btn-aside">Café</li>
-        <li class="btn-aside">Media lunas</li>
+        <li class="btn-aside" data-categoria="hamburguesa">Hamburguesas</li>
+        <li class="btn-aside" data-categoria="pizza">Pizzas</li>
+        <li class="btn-aside" data-categoria="empanada">Empanadas</li>
+        <li class="btn-aside" data-categoria="bebida">Bebidas</li>
+        <li class="btn-aside" data-categoria="cafe">Café</li>
+        <li class="btn-aside" data-categoria="media luna">Media lunas</li>
       </ul>
     </div>
     </aside>
     <main>
-        <div class="principal">
-           
-        </div>
+      <div class="divCarrito"></div>
+        <div class="principal"></div>
+        <div class="elementosCarrito"></div>
 
     </main>
     <footer>
-        <div class="footer">
-        <h2>Suscribite</h2>
-        <input type="text">
-    </div>
+      <div class="footer-container">
+        <div class="footer-social">
+          <img class="footer-logo" src="/imagenes/logo la cocina.png" class="logo">
+        </div>
+        <div class="footer-social">
+          <p class="legales">
+            Todos los derechos reservados &copy; 2023 Tu Sitio Web. Términos y condiciones de uso.
+          </p>
+        </div>
+        <div class="footer-social_iconos">
+          <img class="footer-icons" src="/imagenes/icons8-facebook-100.png" class="logo">
+          <img class="footer-icons" src="/imagenes/insta-icon.png" class="logo">
+          <img class="footer-icons" src="/imagenes/tik-tok-icon.png" class="logo">
+        </div>
+        
+      </div>
     </footer>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
